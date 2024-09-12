@@ -92,10 +92,10 @@ article > p {
     padding: 10px;
 }
 #start-end > .item4 {
-    grid-column: 1 / 4; /* Expande a través de todas las columnas */
+    grid-column: 1 / 4;
 }
 #start-end > .item9 {
-    grid-column: 2 / 4; /* Expande a través de todas las columnas */
+    grid-column: 2 / 4;
 }
 
 .container > div:hover {

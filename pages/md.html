@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/markdow-view.css">
+    <title>Markdown</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Vista en Markdown</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="../index.html">Flex</a></li>
+                <li><a href="../pages/grid.html">grid</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Markdown View -->
+    <div class="markdown-view">
+
+        # Encabezado Nivel 1<br>
+        ## Encabezado Nivel 2<br>
+        ### Encabezado Nivel 3<br><br>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem eligendi voluptatibus voluptas libero
+        recusandae numquam esse deserunt saepe, quasi aut accusantium corporis totam, quia magnam, excepturi sit facilis
+        molestiae.<br><br>
+
+        ***texto en negrita***<br><br>
+
+        *texto en cursiva*<br><br>
+
+        ```
+        function holaMundo(){
+        console.log("Hola Mundo!");
+        }
+        ```<br><br>
+
+        | Cabecera 1 | Cabecera 2 |<br>
+        | ---------- | ---------- |<br>
+        | celda 1 | celda 2 |<br>
+        | celda 3 | celda 4 |
+    </div>
+
+    <!-- Rendered HTML View -->
+    <div class="title">
+        <h1>Visualización</h1>
+    </div>
+    <div class="rendered-view">
+
+        <h1>Encabezado Nivel 1</h1>
+        <hr>
+        <h2>Encabezado Nivel 2</h2>
+        <h3>Encabezado Nivel 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem eligendi voluptatibus voluptas libero
+            recusandae numquam esse deserunt saepe, quasi aut accusantium corporis totam, quia magnam, excepturi sit
+            facilis molestiae.</p>
+
+        <strong>texto en negrita</strong><br><br>
+
+        <em>texto en cursiva</em><br><br>
+
+        <pre><code>function holaMundo(){
+    console.log("Hola Mundo!");
+}</code></pre>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cabecera 1</th>
+                    <th>Cabecera 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>celda 1</td>
+                    <td>celda 2</td>
+                </tr>
+                <tr>
+                    <td>celda 3</td>
+                    <td>celda 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
