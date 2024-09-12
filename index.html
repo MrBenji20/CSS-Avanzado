@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/css-avanzado.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <title>CSS Avanzado</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>CSS Avanzado</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Flex</h2>
+            <h3>nowrap</h3>
+            <p>El contenedor flex usa <strong>nowrap</strong>, lo que significa que los elementos se mantendrán en una
+                sola línea, incluso si no hay suficiente espacio disponible.</p>
+            <div class="flex_container_nowrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>wrap</h3>
+            <p>El contenedor flex usa <strong>wrap</strong>, permitiendo que los elementos se muevan a la siguiente
+                línea si no caben en una sola fila.</p>
+            <div class="flex_container_wrap">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>column</h3>
+            <p>El contenedor flex está organizado en una <strong>columna</strong>, por lo que los elementos se apilan
+                uno debajo del otro.</p>
+            <div class="flex_container_column">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>flex flow</h3>
+            <p>El contenedor flex usa <strong>flex-flow</strong>, combinando las propiedades de dirección y envoltura
+                para manejar la disposición de los elementos.</p>
+            <div class="flex_container_flow">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h2>justify-content</h2>
+
+            <h3>start</h3>
+            <p>El contenido está alineado al <strong>inicio</strong> del contenedor flex, es decir, los elementos se
+                colocan hacia el borde izquierdo.</p>
+            <div class="flex_container_justify_start">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>center</h3>
+            <p>El contenido está <strong>centrado</strong> dentro del contenedor flex, con los elementos alineados
+                horizontalmente en el centro.</p>
+            <div class="flex_container_justify_center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>end</h3>
+            <p>El contenido está alineado al <strong>final</strong> del contenedor flex, lo que significa que los
+                elementos se alinean hacia el borde derecho.</p>
+            <div class="flex_container_justify_end">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>Space-around</h3>
+            <p>El contenido está distribuido de manera que hay espacio igual alrededor de cada elemento dentro del
+                contenedor flex. Esto significa que el espacio entre cada elemento es el mismo, así como el espacio
+                antes del primer elemento y después del último.</p>
+            <div class="flex_container_justify_space_around">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>Space-between</h3>
+            <p>El contenido está distribuido de manera que el espacio entre los elementos es igual, pero no hay espacio
+                adicional al principio y al final del contenedor flex. El primer elemento está alineado al borde
+                izquierdo, y el último al borde derecho, con espacio uniforme entre los elementos.</p>
+            <div class="flex_container_justify_space_between">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h2>align-items</h2>
+
+            <h3>start</h3>
+            <p>Los elementos se alinean al <strong>inicio</strong> del contenedor flex a lo largo del eje transversal.
+                Esto significa que todos los elementos se colocan en el borde superior del contenedor si el eje
+                principal es horizontal.</p>
+            <div class="flex_container_a_start">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>center</h3>
+            <p>Los elementos se alinean en el <strong>centro</strong> del contenedor flex a lo largo del eje
+                transversal. Esto significa que todos los elementos están centrados verticalmente en el contenedor si el
+                eje principal es horizontal.</p>
+            <div class="flex_container_a_center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h3>end</h3>
+            <p>Los elementos se alinean al <strong>final</strong> del contenedor flex a lo largo del eje transversal.
+                Esto significa que todos los elementos se colocan en el borde inferior del contenedor si el eje
+                principal es horizontal.</p>
+            <div class="flex_container_a_end">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <h2>Ultimo nivel de la rana</h2>
+            <p>Asi se veria la solucion XD</p>
+            <P>Pinche Rana</P>
+
+            <div class="flex_container_rana">
+                <div class="rojo">1</div>
+                <div class="verde">2</div>
+                <div class="verde">3</div>
+                <div class="verde">4</div>
+                <div class="verde">5</div>
+                <div class="amarillo">7</div>
+                <div class="amarillo">8</div>
+            </div>
+        </article>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+
+</html>

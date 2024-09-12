@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: red;
+    color: #f1f1f1;
+}
+
+.titulo {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegador */
+nav {
+    color: #f1f1f1;
+    background-color: black;
+    transition: background-color 0.5s;
+}
+
+nav>ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+ul>li {
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+ul>li:hover {
+    background-color: #dddd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Flexbox styles */
+
+article>h2,
+article>h3,
+p {
+    padding: 10px;
+    background-color: rgb(124, 188, 252);
+    text-align: center;
+    transition: all;
+}
+
+article>h3 {
+    background-color: rgb(167, 211, 255);
+}
+
+article>p {
+    font-size: 20px;
+    background-color: rgb(204, 229, 255);
+}
+
+article>div{
+    display: flex;
+    background-color: dodgerblue;
+    transition: background-color 0.5s, justify-content 0.5s;
+}
+
+/* No Wrap */
+.flex_container_nowrap {
+    flex-wrap: nowrap;
+}
+
+/* Wrap */
+.flex_container_wrap {
+    flex-wrap: wrap;
+}
+
+/* Column */
+.flex_container_column {
+    flex-direction: column;
+}
+
+/* Flex flow */
+.flex_container_flow {
+    flex-flow: row nowrap;
+}
+
+/* justify-content */
+
+/* Start */
+
+.flex_container_justify_start {
+    justify-content: start;
+}
+
+/* Center */
+.flex_container_justify_center {
+    justify-content: center;
+}
+
+/* End */
+.flex_container_justify_end {
+    justify-content: flex-end;
+}
+
+/* space around */
+.flex_container_justify_space_around {
+    justify-content: space-around;
+}
+
+/* space between */
+.flex_container_justify_space_between {
+    justify-content: space-between;
+}
+
+/* Baseline */
+.flex_container_justify_baseline {
+    width: 400px;
+    height: 400px;
+    align-items: baseline;
+}
+
+/* align-items */
+/* start */
+.flex_container_a_start {
+    height: 400px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+/* center */
+.flex_container_a_center {
+    height: 400px;
+    align-items: center;
+}
+
+/* end */
+.flex_container_a_end {
+    height: 400px;
+    align-items: flex-end;
+}
+
+/* rana */
+.flex_container_rana {
+    height: 500px;
+    flex-flow: wrap-reverse column-reverse;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.flex_container_nowrap>div,
+.flex_container_wrap>div,
+.flex_container_column>div,
+.flex_container_flow>div,
+.flex_container_justify_start>div,
+.flex_container_justify_center>div,
+.flex_container_justify_end>div,
+.flex_container_justify_space_around>div,
+.flex_container_justify_space_between>div,
+.flex_container_justify_baseline>div,
+.flex_container_a_start>div,
+.flex_container_a_center>div,
+.flex_container_a_end>div,
+.flex_container_rana>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    transition: justify-content 0.5s, background-color 0.5s;
+}
+
+.flex_container_rana{
+    height: 60vh;
+    color: white;
+}
+
+.flex_container_rana>.amarillo{
+    color: black;
+    background-color: yellow;
+}
+.flex_container_rana>.verde{
+    background-color: green;
+}
+.flex_container_rana>.rojo{
+    background-color: red;  
+}
+
