@@ -64,6 +64,10 @@ article > p {
     background-color: rgb(204, 229, 255);
 }
 
+#menu {
+    height: 100vh;
+}
+
 
 .container {
     display: grid;
