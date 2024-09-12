@@ -1,6 +1,6 @@
 # Aca esta con ejemplos visuales lo que es flexbox y gridbox
 ---
-| paginas | css | js | descripcion |
+| Paginas | CSS | JS | Descripcion |
 |--- | --- |--- |--- |
 |index.html| * golobal.css  * css-avanzado.css, | ...  | muestra el flex |
 |grid.html| * grid.css | ...  | muestra el grid |
