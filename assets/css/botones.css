@@ -1,7 +1,11 @@
 /* Define tus variables de color */
 :root {
-    --primary-color: #0BB79E;
-    --secundary-color: #A3D339;
+    --color-primario: #0BB79E;
+    --color-primario-light: #A3D339;
+    --color-secundario: #FF6427;
+    --color-secundario-light: #FF9912;
+    --color-tercario: #05A6DD;
+    --color-tercario-light: #5FD6F2;
 }
 
 .btn {
@@ -14,10 +18,16 @@
     outline: none;
     border-radius: 0.2rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-    background-color: var(--primary-color);
     color: #ecf0f1;
     transition: background-color .5s;
 }
+
+#btn1{background-color: var(--color-primario);}
+#btn2{background-color: var(--color-primario-light);}
+#btn3{background-color: var(--color-secundario);}
+#btn4{background-color: var(--color-secundario-light);}
+#btn5{background-color: var(--color-tercario);}
+#btn6{background-color: var(--color-tercario-light);}
 
 
 
