@@ -1,3 +1,15 @@
+:root {
+    --color-primario: #0BB79E;
+    --color-primario-light: #A3D339;
+    --color-secundario: #FF6427;
+    --color-secundario-light: #FF9912;
+    --color-tercario: #05A6DD;
+    --color-tercario-light: #5FD6F2;
+    --color-success: #00ff00;
+    --color-warning: #ffff00;
+    --color-error: #ff0000;
+}
+
 * {
     margin: 0;
     padding: 0;
