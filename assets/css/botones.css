@@ -10,6 +10,7 @@
     --color-error: #ff0000;
 }
 
+
 main>article {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +29,9 @@ main>article {
     color: #ecf0f1;
     transition: background-color .5s;
     cursor: pointer;
+    box-sizing: border-box;
 }
+
 
 #btn1 {
     background-color: var(--color-primario);
@@ -70,11 +73,14 @@ main>article {
 }
 
 .btn span {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 24px;
+    width: 100%; 
+    height: 100%;
     transition: background-color .5s;
 }
-
 .btn:hover>span {
     background-color: rgba(0, 0, 0, .2);
 }
@@ -116,6 +122,7 @@ main>article {
     padding: 12px 12px;
 }
 
+/* outlined */
 .btn-outlined {
     background-color: inherit;
     box-shadow: none;
@@ -166,4 +173,51 @@ main>article {
 
 .btn-outlined::before {
     background-color: rgba(0, 0, 0, 0.13);
+}
+
+.btn-outlined:hover>span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#btn1_outlined:hover>span::before {
+    background-color: var(--color-primario);
+}
+
+#btn2_outlined:hover>span::before {
+    background-color: var(--color-primario-light);
+}
+
+#btn3_outlined:hover>span::before {
+    background-color: var(--color-secundario);
+}
+
+#btn4_outlined:hover>span::before {
+    background-color: var(--color-secundario-light);
+}
+
+#btn5_outlined:hover>span::before {
+    background-color: var(--color-tercario);
+}
+
+#btn6_outlined:hover>span::before {
+    background-color: var(--color-tercario-light);
+}
+
+#btn7_outlined:hover>span::before {
+    background-color: var(--color-success);
+}
+
+#btn8_outlined:hover>span::before {
+    background-color: var(--color-warning);
+}
+
+#btn9_outlined:hover>span::before {
+    background-color: var(--color-error);
 }
