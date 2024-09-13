@@ -1,4 +1,3 @@
-/* Define tus variables de color */
 :root {
     --color-primario: #0BB79E;
     --color-primario-light: #A3D339;
@@ -6,6 +5,14 @@
     --color-secundario-light: #FF9912;
     --color-tercario: #05A6DD;
     --color-tercario-light: #5FD6F2;
+    --color-success: #00ff00;
+    --color-warning: #ffff00;
+    --color-error: #ff0000;
+}
+
+main>article {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -20,14 +27,41 @@
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     color: #ecf0f1;
     transition: background-color .5s;
+    cursor: pointer;
 }
 
-#btn1{background-color: var(--color-primario);}
-#btn2{background-color: var(--color-primario-light);}
-#btn3{background-color: var(--color-secundario);}
-#btn4{background-color: var(--color-secundario-light);}
-#btn5{background-color: var(--color-tercario);}
-#btn6{background-color: var(--color-tercario-light);}
+#btn1 {
+    background-color: var(--color-primario);
+}
+
+#btn2 {
+    background-color: var(--color-primario-light);
+}
+
+#btn3 {
+    background-color: var(--color-secundario);
+}
+
+#btn4 {
+    background-color: var(--color-secundario-light);
+}
+
+#btn5 {
+    background-color: var(--color-tercario);
+}
+
+#btn6 {
+    background-color: var(--color-tercario-light);
+}
+#btn7 {
+    background-color: var(--color-success);
+}
+#btn8 {
+    background-color: var(--color-warning);
+}
+#btn9 {
+    background-color: var(--color-error);
+}
 
 
 
@@ -62,4 +96,74 @@
     width: 120%;
     padding-top: 120%;
     transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Estilos, no son importantes */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* estilo ícono */
+.btn-icon {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-icon span {
+    padding: 12px 12px;
+}
+
+.btn-outlined {
+    background-color: inherit;
+    box-shadow: none;
+    grid-area: btn-outlined;
+    cursor: pointer;
+}
+
+#btn1_outlined {
+    color: var(--color-primario);
+    border: 0.14em solid var(--color-primario);
+}
+#btn2_outlined {
+    color: var(--color-primario-light);
+    border: 0.14em solid var(--color-primario-light);
+}
+#btn3_outlined {
+    color: var(--color-secundario);
+    border: 0.14em solid var(--color-secundario);
+}
+#btn4_outlined {
+    color: var(--color-secundario-light);
+    border: 0.14em solid var(--color-secundario-light);
+}
+#btn5_outlined {
+    color: var(--color-tercario);
+    border: 0.14em solid var(--color-tercario);
+}
+#btn6_outlined {
+    color: var(--color-tercario-light);
+    border: 0.14em solid var(--color-tercario-light);
+}
+#btn7_outlined {
+    color: var(--color-success);
+    border: 0.14em solid var(--color-success);
+}
+#btn8_outlined {
+    color: var(--color-warning);
+    border: 0.14em solid var(--color-warning);
+}
+#btn9_outlined {
+    color: var(--color-error);
+    border: 0.14em solid var(--color-error);
+}
+
+.btn-outlined:hover>span {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btn-outlined::before {
+    background-color: rgba(0, 0, 0, 0.13);
 }
